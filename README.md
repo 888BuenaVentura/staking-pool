@@ -33,5 +33,39 @@ A staking pool protocol on Solana where users deposit SOL to earn rewards. Built
 
 ```bash
 git clone https://github.com/888BuenaVentura/staking-pool.git
+
+Build
+anchor build
+
+Deploy (localnet)
+anchor test
+
+Deploy (devnet)
+anchor deploy --provider.cluster devnet
+
+Project Structure
+├── programs/
+│   └── staking_pool/      # Anchor program (Rust)
+├── scripts/               # Deploy & test scripts
+├── Anchor.toml            # Anchor config
+├── Cargo.toml             # Rust workspace
+└── package.json           # JS dependencies   
+
+License
+MIT
+
+### Instrucciones
+
+1. Abre `README.md` en tu repo `staking-pool`
+2. Reemplaza todo el contenido con lo de arriba
+3. Haz `git add . && git commit -m "Update README" && git push`
+4. Si puedes, sube un screenshot de la terminal mostrando `anchor test` pasando → guárdalo como `screenshot.png` en la raíz del repo y agrega esta línea al final del README:
+
+```markdown
+## Screenshot
+
+| Test passing |
+|:---:|
+| ![Test](screenshot.png) |   
 cd staking-pool
 yarn install   
